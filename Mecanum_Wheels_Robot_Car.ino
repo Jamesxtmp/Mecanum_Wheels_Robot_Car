@@ -40,8 +40,6 @@ int Speed3 = 255;
 int Speed4 = 255;
 
 
-
-
 void Motor(int Dir,int Speed1,int Speed2,int Speed3,int Speed4)
 {
     analogWrite(PWM2A,Speed1); //Motor PWM speed regulation
@@ -131,6 +129,7 @@ void Ultrasonic_Follow()
 }
 
 void setup(){
+
   BT_value = "";
   BT_value_temp = "";
   Front_Distance = 0;
